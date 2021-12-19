@@ -9,4 +9,4 @@ Text('create a employee objects', () => {
     expect(employee.id).toEqual(expect.any(Number));
     expect(employee.email).toEqual(expect.any(String));
 
-})
+});
