@@ -1,6 +1,6 @@
 // using Employee constructor 
 const Employee = require('../lib/Employee');
-const employee = new Employee('Alvaro', '50', 'acmcalvo@yahoo.com');
+const employee = new Employee('Alvaro', 50, 'acmcalvo@yahoo.com');
 
 //Create employee object
 Text('create a employee objects', () => {
