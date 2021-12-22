@@ -20,6 +20,7 @@ const Intern = require('./lib/Intern');
                 } else {
                     console.log ("Please enter the manager's name!");
                     return false; 
+                    
                 }
             }
         },
