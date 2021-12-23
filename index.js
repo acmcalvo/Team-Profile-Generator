@@ -1,4 +1,4 @@
-const generateHTML = require('./src/htmlRender');
+const generateHTML = require('./src htmlRenderer');
 
 // team profiles
 const Manager = require('./lib/Manager');
