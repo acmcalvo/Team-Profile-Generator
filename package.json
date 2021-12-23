@@ -23,5 +23,8 @@
   "dependencies": {
     "inquirer": "^8.2.0",
     "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
   }
 }
