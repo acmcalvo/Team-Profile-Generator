@@ -1,4 +1,24 @@
-const Employee = require("../lib/Employee");
+const Employee = require('../lib/Employee');
+// const Password = require("");
+
+// test("password",() => {
+// const pass = new Password();
+// expect(pass.length >= 12).toBe(true);
+// });
+
+// // test("password have Number", () => {
+// //   const pass = new Password();
+// //   let hasNum = false;
+// //   const nums = '1234567890'.split('');
+
+// //   for(let i = 0; i < nums.length; i++) {
+// //     if(pass.indexOf(nums[i]) !== -1) {
+// //       hasNum = true;
+// //     };
+// //   };
+
+//   expect(hasNum).toEqual(true);
+// });
 
 test("Create Employee", () => {
   const emp = new Employee();
