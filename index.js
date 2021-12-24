@@ -117,14 +117,14 @@ const internQuestions = () => {
         },
         {
             type: 'input',
-            name: 'school',
+            name: 'college',
             message: 'What is the intern\'s College?'
         },
         {
             type: 'list',
             name: 'addMember',
             message: 'What type of team member would you like to add next?',
-            choices: ['Engineer', 'Intern', 'I don\'t want to add any more team members'],
+            choices: ['Engineer', 'Intern', 'No more team\'s worker need to be added'],
         }
     ])
     .then((internAnswers) => {
@@ -149,6 +149,6 @@ managerQuestions();
 function writeToFile(filename, data) {
     fs.writeFile(filename, data, (err) => {
         if(err) throw err;
-        console.log('file saved')
+        console.log('file saved, Done!')
     });
 };
