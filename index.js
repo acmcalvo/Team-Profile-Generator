@@ -118,7 +118,7 @@ const internQuestions = () => {
         {
             type: 'input',
             name: 'school',
-            message: 'What is the intern\'s school?'
+            message: 'What is the intern\'s College?'
         },
         {
             type: 'list',
