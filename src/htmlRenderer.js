@@ -1,13 +1,13 @@
 // create Manager card
 const generateManager = (manager) => {
-    return `
-    <div class="col-4 mt-4">
-        <div class="card h-100">
+  return `
+    <div class="col-9 mt-4">
+        <div class="card h-100 shadow-sm p-3 mb-5 bg-white rounded"">
             <div class="card-header bg-primary text-white">
                 <h3>${manager.name}</h3>
                 <h4>Manager</h4><i class="material-icons">content_paste</i>
             </div>
-            <div class="card-body">
+            <div class="card-body  bg-light">
                 <p class="id">ID: ${manager.id}</p>
                 <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p class="office">Office Number: ${manager.officeNumber}</p>
@@ -15,97 +15,94 @@ const generateManager = (manager) => {
         </div>
     </div>
     `;
-}
+};
 
 // create Engineer card
 const generateEngineer = (engineer) => {
-    return `
-    <div class="col-4 mt-4">
-        <div class="card h-100">
+  return `
+    <div class="col-9 mt-4">
+        <div class="card h-100 shadow-sm p-3 mb-5 bg-white rounded">
             <div class="card-header bg-primary text-white">
                 <h3>${engineer.name}</h3>
                 <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
             </div>
-            <div class="card-body">
+            <div class="card-bodyv bg-light">
                 <p class="id">ID: ${engineer.id}</p>
                 <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
             </div>
         </div>
     </div>
-    `
-}
+    `;
+};
 
-// create Intern card 
+// create Intern card
 const generateIntern = (intern) => {
-    return `
-    <div class="col-4 mt-4">
-        <div class="card h-100">
+  return `
+    <div class="col-9 mt-4">
+        <div class="card h-100 shadow-sm p-3 mb-5 bg-white rounded">
             <div class="card-header bg-primary text-white">
                 <h3>${intern.name}</h3>
                 <h4>Intern</h4><i class="material-icons">assignment_ind</i>
             </div>
-            <div class="card-body">
+            <div class="card-body  bg-light">
                 <p class="id">ID: ${intern.id}</p>
                 <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
                 <p class="college">College: ${intern.college}</p>
             </div>
     </div>
 </div>
-    `
+    `;
 };
 
-// push array to page 
+// push array to page
 generateHTML = (data) => {
+  // array for cards
+  pageArray = [];
 
-    // array for cards 
-    pageArray = []; 
+  for (let i = 0; i < data.length; i++) {
+    const employee = data[i];
+    const role = employee.getRole();
 
-    for (let i = 0; i < data.length; i++) {
-        const employee = data[i];
-        const role = employee.getRole(); 
+    // call manager function
+    if (role === "Manager") {
+      const managerCard = generateManager(employee);
 
-
-        // call manager function
-        if (role === 'Manager') {
-            const managerCard = generateManager(employee);
-
-            pageArray.push(managerCard);
-        }
-
-        // call engineer function
-        if (role === 'Engineer') {
-            const engineerCard = generateEngineer(employee);
-
-            pageArray.push(engineerCard);
-        }
-
-        // call intern function 
-        if (role === 'Intern') {
-            const internCard = generateIntern(employee);
-
-            pageArray.push(internCard);
-        }
-        
+      pageArray.push(managerCard);
     }
 
-    // joining strings 
-    const employeeCards = pageArray.join('')
+    // call engineer function
+    if (role === "Engineer") {
+      const engineerCard = generateEngineer(employee);
 
-    // return to generated page
-    const generateTeam = generateTeamPage(employeeCards); 
-    return generateTeam;
+      pageArray.push(engineerCard);
+    }
 
-}
+    // call intern function
+    if (role === "Intern") {
+      const internCard = generateIntern(employee);
 
-// generate html page 
-const generateTeamPage = function (employeeCards) {   
-  return`
+      pageArray.push(internCard);
+    }
+  }
+
+  // joining strings
+  const employeeCards = pageArray.join("");
+
+  // return to generated page
+  const generateTeam = generateTeamPage(employeeCards);
+  return generateTeam;
+};
+
+// generate html page
+const generateTeamPage = function (employeeCards) {
+  return `
   <!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
       <title>Team Profile| ACM</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
       <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
@@ -136,7 +133,7 @@ const generateTeamPage = function (employeeCards) {
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </html>
 `;
-}
+};
 
 // export to index
-module.exports = generateHTML; 
+module.exports = generateHTML;

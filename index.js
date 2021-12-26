@@ -155,7 +155,7 @@ const internQuestions = () => {
         internAnswers.name,
         internAnswers.id,
         internAnswers.email,
-        internAnswers.college,
+        internAnswers.college
       );
       team.push(intern);
       switch (internAnswers.addMember) {
