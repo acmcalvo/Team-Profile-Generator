@@ -3,7 +3,7 @@ const generateManager = (manager) => {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="card-header bg-primary text-white">
                 <h3>${manager.name}</h3>
                 <h4>Manager</h4><i class="material-icons">content_paste</i>
             </div>
@@ -22,7 +22,7 @@ const generateEngineer = (engineer) => {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="card-header bg-primary text-white">
                 <h3>${engineer.name}</h3>
                 <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
             </div>
@@ -41,7 +41,7 @@ const generateIntern = (intern) => {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="card-header bg-primary text-white">
                 <h3>${intern.name}</h3>
                 <h4>Intern</h4><i class="material-icons">assignment_ind</i>
             </div>
