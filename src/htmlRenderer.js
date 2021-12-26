@@ -115,9 +115,9 @@ const generateTeamPage = function (employeeCards) {
   </head>
   </head>
   <body>
-  <div class="jumbotron jumbotron-fluid bg-primary">
+  <div class="jumbotron jumbotron-fluid bg-danger">
     <div class="container">
-      <h1 class="display-4 text-center">My Team</h1>
+      <h1 class="display-4 text-center text-white font-weight-bold">My Team</h1>
     </div>
   </div>
       </header>
