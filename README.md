@@ -16,7 +16,8 @@
   
   
   ## Presentation
-  https://user-images.githubusercontent.com/91921941/146697050-d91303e3-02c0-428a-a1b1-0f0a122b4795.mp4
+  
+https://user-images.githubusercontent.com/91921941/147427228-bfc1d3e8-9fff-4940-8aaf-da71310bce24.mp4
   
   Please use this link if you issues:
   https://watch.screencastify.com/v/bHBIai3AFTNdsumrxfAA
@@ -31,7 +32,12 @@
   This project is license under MIT License
 
   ## Installation
-  To get started fork the project for your own GitHub and clone the repository. Open the directory where package.json is located in the terminal. Run a npm install to install all the dependencies for this application. Then you are ready to go.
+  To get started fork the project for your own GitHub and clone the repository. Open the directory where package.json is located in the terminal. Run a npm install to install all the dependencies for this application. Then you are ready to go. 
+
+
+
+<img width="1272" alt="Screen Shot 2021-12-26 at 9 02 33 PM" src="https://user-images.githubusercontent.com/91921941/147427350-22482b68-5603-491d-a2ef-7ee2257c0b5d.png">
+  
   
   * Download it through Github
   * Ensure inquirer is installed and Jest as well
