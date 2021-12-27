@@ -24,7 +24,10 @@ https://user-images.githubusercontent.com/91921941/147427228-bfc1d3e8-9fff-4940-
   
   ## Description
   
- This is a Challenge for week 11, We generator a functional  app to build a Node.js application. Create runs test before, build code, so we can make sure our logic is going to work, then we create a library with each class or category and basic information to meet Challenge minimum requiered  , and create  index.js file with all the inputs to generated on htmlRenderer (HTML) output.
+ This is a Challenge for week 11, We generator a functional  app to build a Node.js application. Create runs test before, build code, so we can make sure our logic is going to work, then we create a library with each classes or category and basic information to meet Challenge minimum required, and create  index.js file with all the inputs to generated on htmlRenderer (HTML) output.
+
+ <img width="1272" alt="Screen Shot 2021-12-26 at 9 02 33 PM" src="https://user-images.githubusercontent.com/91921941/147427350-22482b68-5603-491d-a2ef-7ee2257c0b5d.png">
+  
  
 
   
@@ -36,9 +39,8 @@ https://user-images.githubusercontent.com/91921941/147427228-bfc1d3e8-9fff-4940-
 
 
 
-<img width="1272" alt="Screen Shot 2021-12-26 at 9 02 33 PM" src="https://user-images.githubusercontent.com/91921941/147427350-22482b68-5603-491d-a2ef-7ee2257c0b5d.png">
-  
-  
+
+
   * Download it through Github
   * Ensure inquirer is installed and Jest as well
  
