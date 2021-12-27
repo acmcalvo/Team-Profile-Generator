@@ -1,11 +1,13 @@
 // create Manager card
 const generateManager = (manager) => {
   return `
-    <div class="col-9 mt-4">
+    <div class="col-4 mt-4">
         <div class="card h-100 shadow-sm p-3 mb-5 bg-white rounded"">
             <div class="card-header bg-primary text-white">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <h4>Manager</h4><span class="material-icons">
+                coffee
+                </span>
             </div>
             <div class="card-body  bg-light">
                 <p class="id">ID: ${manager.id}</p>
@@ -20,13 +22,15 @@ const generateManager = (manager) => {
 // create Engineer card
 const generateEngineer = (engineer) => {
   return `
-    <div class="col-9 mt-4">
+    <div class="col-4 mt-4">
         <div class="card h-100 shadow-sm p-3 mb-5 bg-white rounded">
             <div class="card-header bg-primary text-white">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                <h4>Engineer</h4><span class="material-icons">
+                engineering
+                </span>
             </div>
-            <div class="card-bodyv bg-light">
+            <div class="card-body bg-light">
                 <p class="id">ID: ${engineer.id}</p>
                 <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
@@ -39,11 +43,13 @@ const generateEngineer = (engineer) => {
 // create Intern card
 const generateIntern = (intern) => {
   return `
-    <div class="col-9 mt-4">
+    <div class="col-4 mt-4">
         <div class="card h-100 shadow-sm p-3 mb-5 bg-white rounded">
             <div class="card-header bg-primary text-white">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+                <h4>Intern</h4><span class="material-icons">
+                school
+                </span>
             </div>
             <div class="card-body  bg-light">
                 <p class="id">ID: ${intern.id}</p>
